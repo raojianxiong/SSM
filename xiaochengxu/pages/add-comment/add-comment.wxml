@@ -1,0 +1,6 @@
+<view class="section">
+  <form bindsubmit='bindFormSubmit'>
+    <textarea class='content' placeholder='说点什么呢?' name="textarea"/>
+    <button class='submit' form-type='submit'>提交</button>
+  </form>
+</view>

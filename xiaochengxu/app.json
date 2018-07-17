@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/article/article-list",
+    "pages/detail/detail",
+    "pages/add-comment/add-comment",
+    "pages/account/account",
+    "pages/about/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "JianxiongRao同学",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "selectedColor": "#ffba00",
+    "list":[
+      {
+        "pagePath":"pages/article/article-list",
+        "text":"首页",
+        "iconPath":"images/tab_bottom_home1.png",
+        "selectedIconPath":"images/tab_bottom_home2.png"
+      },
+      {
+        "pagePath":"pages/about/about",
+        "text":"我",
+        "iconPath":"images/tab_bottom_account1.png",
+        "selectedIconPath":"images/tab_bottom_account2.png"
+      }
+    ]
+  }
+}

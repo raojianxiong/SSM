@@ -1,0 +1,24 @@
+<view class='items'>
+  <scroll-view scroll-y="true" style='height:1208rpx' bindscrolltolower="onLoadMore">
+
+    <view class='item' style="flex-direction:column;" wx:for="{{articleList}}" wx:key="articleList" bindtap='onItemClick' data-index="{{index}}">
+      <view class='date'>
+        <text>{{item.date}}</text>
+      </view>
+      <view class='content'>
+        <image class='cover' src='{{item.cover}}' mode='aspectFill'></image>
+
+        <view class='title'>
+          <text>{{item.title}}</text>
+        </view>
+
+        <view class='summary'>
+          <text>{{item.summary}}</text>
+        </view>
+      </view>
+    </view>
+    <!--hidden用户频繁切换  -->
+    <view class='loadMore' hidden='{{!isLoadMore}}'>正在载入....</view>
+    <view class='loadFinish' hidden='{{!isLoadFinish}}'>已加载全部</view>
+  </scroll-view>
+</view>

@@ -1,0 +1,25 @@
+/* pages/account/account.wxss */
+.uesrinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar-default{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-avatar-default::after{
+  border: none;
+}
+
+.userinfo-avatar{
+   width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  margin-top: 20rpx;
+}

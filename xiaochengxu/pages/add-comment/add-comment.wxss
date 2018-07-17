@@ -1,0 +1,9 @@
+/* pages/add-comment/add-comment.wxss */
+.content{
+  margin: 20rpx;
+}
+.submit{
+  margin: 20rpx;
+  background-color: #ffba00;
+  color: #fff;
+}

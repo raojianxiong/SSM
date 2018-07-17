@@ -1,0 +1,36 @@
+<!-- 引入模板  -->
+<import src="../../wemark/wemark.wxml" />
+<view class='article'>
+  <!--data 中的参数和上方确定的数据名保持一致  -->
+ <wemark md="{{wemark}}" link highlight type="wemark"></wemark>
+</view>
+
+<view class='likeRead'>
+  <view style='flex-basis:40%;'>
+    <text class='readText'>阅读</text>
+    <text class='readNum'>{{readNum}}</text>
+    <image class='likeImage' src='{{likeImage}}' bindtap='addLikeClick'></image>
+    <text class='likeNum'>{{likeNum}}</text>
+  </view>
+
+  <view style='flex-basis:60%'>
+    <button class='userLogin' wx:if="{{!hasUserInfo}}" open-type='getUserInfo' bind-getuserinfo='getUserInfo'>留言</button>
+    <view wx:else class='addComment' bindtap='addComment'>留言</view>
+  </view>
+</view>
+
+<view class='line'/>
+
+<view wx:for="{{commentList}}" wx:key="commentList" bindtap='onItemClick' data-index="{{index}}">
+  <view class='item'>
+    <image class='avatar' src='{{item.avatar}}'></image>
+    <view class='comment'>
+      <view class='nickname'>
+        <text>{{item.nickname}}</text>
+      </view>
+      <view class='content'>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</view>
